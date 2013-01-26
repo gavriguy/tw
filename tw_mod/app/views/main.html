@@ -1,0 +1,25 @@
+<div class="hero-unit">
+  
+  <h3>Enjoy coding! - Yeoman</h3>
+  
+  
+    <label class="checkbox">
+      <input type="checkbox"  ng-model="twitterHashtags"> Twitter Hashtags
+    </label>
+    <div class="form-inline" ng-show="twitterHashtags">
+        <div class="input-prepend">
+            <span class="add-on">#</span>
+            <input class="span2" id="prependedInput" type="text" placeholder="Hashtag">
+        </div>
+         <button type="submit" class="btn">Submit</button>
+    </div>
+
+
+    <div ng-repeat="tweet in tweets">
+    
+      <blockquote class="twitter-tweet" >
+            <a href="https://twitter.com/twitter/status/{{tweet.id_str}}"></a>
+                    </blockquote>
+    </div>
+
+</div>

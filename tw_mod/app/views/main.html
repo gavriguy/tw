@@ -1,7 +1,5 @@
 <div class="hero-unit">
   
-  <h3>Enjoy coding! - Yeoman</h3>
-  
   
     <label class="checkbox">
       <input type="checkbox"  ng-model="twitterHashtags"> Twitter Hashtags
@@ -14,12 +12,37 @@
          <button type="submit" class="btn">Submit</button>
     </div>
 
+<!-- -->
+    <div class="tweets-list row" ng-show="twitterHashtags && true">
 
-    <div ng-repeat="tweet in tweets">
-    
-      <blockquote class="twitter-tweet" >
-            <a href="https://twitter.com/twitter/status/{{tweet.id_str}}"></a>
-                    </blockquote>
+      <!-- Left List -->
+      <div class="span5"> 
+        <div class="row">
+          <div class="span1 avatar">
+            <img src="http://dummyimage.com/80x80/000/fff"></img>
+          </div>
+          <div class="span4">
+            <div class=""><a>username</a></div>
+            <div>
+              Experimenting with AngularJS.. I've to say that, I'm pretty impressed!! http://angularjs.org  #angularjs #javascript
+            </div>
+            <ul class="inline">
+              <li><a href="#"><i class="icon-retweet"></i> Retweet</a></li>
+            </ul>
+            
+          </div>
+        </div>
+      </div>
+      <div class="span5">
+        B
+      </div>
     </div>
+<!-- en -->
+
+
+
+    
+
 
 </div>
+    <script  async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>

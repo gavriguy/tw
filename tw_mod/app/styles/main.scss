@@ -12,6 +12,29 @@ ol.inline {
   }
 }
 
+
+
+/* */
+
+
+.item-settings {
+  //background: red;
+  position: relative;
+  background: url('../images/cms1.png') transparent no-repeat;
+
+
+  .item-hashtags-setting {
+    padding: 10px 0;
+    position: absolute;
+    background: #ccc;
+    top: 500px;
+    left: 273px;
+    form {
+      padding-left: 40px;
+    }
+  }
+}
+
 .tweets-list {
   margin-top:10px;
 }

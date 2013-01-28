@@ -6170,7 +6170,26 @@ ol.inline li {
   padding-right: 5px;
 }
 
-/* line 15, ../../app/styles/main.scss */
+/* */
+/* line 20, ../../app/styles/main.scss */
+.item-settings {
+  position: relative;
+  background: url("../images/cms1.png") transparent no-repeat;
+}
+/* line 26, ../../app/styles/main.scss */
+.item-settings .item-hashtags-setting {
+  padding: 10px 0;
+  position: absolute;
+  background: #ccc;
+  top: 500px;
+  left: 273px;
+}
+/* line 32, ../../app/styles/main.scss */
+.item-settings .item-hashtags-setting form {
+  padding-left: 40px;
+}
+
+/* line 38, ../../app/styles/main.scss */
 .tweets-list {
   margin-top: 10px;
 }

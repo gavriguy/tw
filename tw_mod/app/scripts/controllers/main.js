@@ -1,5 +1,8 @@
 
-twModApp.controller('MainCtrl', function($scope, $http, $timeout) {
+twModApp.controller('MainCtrl', function($scope, $http, $timeout, $rootScope) {
+
+	$rootScope.bodyClass = 'foo';
+
 	//$scope.awesomeThings = ['HTML5 Boilerplate', 'AngularJS', 'Testacular'];
   //Rerednser http://platform.twitter.com/widgets.js after tweets ware loaded
 //   $timeout(function() {

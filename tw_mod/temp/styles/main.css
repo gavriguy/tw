@@ -6171,12 +6171,16 @@ ol.inline li {
 }
 
 /* */
-/* line 20, ../../app/styles/main.scss */
-.item-settings {
+/* line 19, ../../app/styles/main.scss */
+body {
   position: relative;
+}
+
+/* line 22, ../../app/styles/main.scss */
+.item-settings {
   background: url("../images/cms1.png") transparent no-repeat;
 }
-/* line 26, ../../app/styles/main.scss */
+/* line 28, ../../app/styles/main.scss */
 .item-settings .item-hashtags-setting {
   padding: 10px 0;
   position: absolute;
@@ -6184,12 +6188,36 @@ ol.inline li {
   top: 500px;
   left: 273px;
 }
-/* line 32, ../../app/styles/main.scss */
+/* line 34, ../../app/styles/main.scss */
 .item-settings .item-hashtags-setting form {
   padding-left: 40px;
 }
+/* line 39, ../../app/styles/main.scss */
+.item-settings .promted-users-picker {
+  width: 400px;
+}
 
-/* line 38, ../../app/styles/main.scss */
+/* line 45, ../../app/styles/main.scss */
+.bubbles {
+  background: url("../images/iphone-big-brother.jpg") transparent no-repeat;
+}
+/* line 48, ../../app/styles/main.scss */
+.bubbles .bubble {
+  display: none;
+  margin-left: -93px;
+  margin-top: 66px;
+  width: 435px;
+  height: 155px;
+  background: url("../images/bubble.png") transparent no-repeat;
+}
+/* line 55, ../../app/styles/main.scss */
+.bubbles .bubble #progress-timer {
+  width: 80px;
+  margin-top: 100px;
+  margin-left: 0px;
+}
+
+/* line 65, ../../app/styles/main.scss */
 .tweets-list {
   margin-top: 10px;
 }

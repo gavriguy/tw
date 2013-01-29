@@ -1,6 +1,6 @@
 'use strict';
 
-var twModApp = angular.module('twModApp', [])
+var twModApp = angular.module('twModApp', ['ui'])
   .config(['$routeProvider', function($routeProvider) {
     $routeProvider
       .when('/', {

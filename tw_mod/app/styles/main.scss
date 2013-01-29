@@ -16,10 +16,12 @@ ol.inline {
 
 /* */
 
-
+body {
+  position: relative;
+}
 .item-settings {
   //background: red;
-  position: relative;
+  
   background: url('../images/cms1.png') transparent no-repeat;
 
 
@@ -33,7 +35,32 @@ ol.inline {
       padding-left: 40px;
     }
   }
+
+  .promted-users-picker {
+    width: 400px;
+  }
 }
+
+
+.bubbles {
+  background: url('../images/iphone-big-brother.jpg') transparent no-repeat;
+
+  .bubble {
+    display: none;
+    margin-left: -93px;
+    margin-top: 66px;
+    width: 435px;
+    height: 155px;
+    background: url('../images/bubble.png') transparent no-repeat;
+    #progress-timer {
+      width: 80px;
+      margin-top:100px;
+      margin-left: 0px
+    }
+  }
+
+}
+
 
 .tweets-list {
   margin-top:10px;

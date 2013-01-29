@@ -1,61 +1,46 @@
 <div class="item-hashtags-setting row">
   <div class="span12">
-      <form class="form-horizontal">
-        <div class="control-group">
-          <label class="control-label">Hashtag:</label>
-          <div class="controls"> 
-            <div class="input-prepend">
-                <span class="add-on">#</span>
-                <input class="span2" id="prependedInput" type="text" placeholder="Hashtag">
-            </div>
+    <form class="form-horizontal">
+      <div class="control-group">
+        <label class="control-label">Hashtag:</label>
+        <div class="controls"> 
+          <div class="input-prepend">
+            <span class="add-on">#</span>
+            <input class="span2" id="prependedInput" type="text" placeholder="Hashtag" ng-model="hashtagInput">
           </div>
         </div>
+      </div>
 
-        <div class="control-group">
-          <label class="control-label">Promoted users:</label>
-          <div class="controls"> 
-            <input class="promted-users-picker"  ui-select2="{tags:['@username1','@username2']}" multiple>
-            
-
-         <!--  <div class="input-prepend">
-            <span class="add-on">@</span>
-            <input class="span2"  type="text" placeholder="Username">
-          </div> -->
-
-         <!--   <div class="input-prepend">
-            <span class="add-on">@</span>
-            <input class="span2"  type="text" placeholder="Username">
-          </div>
-
-
-          <button class="btn" type="button">+</button> -->
-
+      <div class="control-group" ng-show="hashtagInput">
+        <label class="control-label">Promoted users:</label>
+        <div class="controls"> 
+          <input class="promted-users-picker"  ui-select2="{tags:['@username1','@username2']}" multiple ng-model="users">
 
         </div>
         <div class="controls"> 
           <label class="checkbox">
-            <input type="checkbox" checked>Don't moderate promoted users
+            <input type="checkbox" checked disabled="false">Don't moderate promoted users {{users.length < 1}} 
           </label>
         </div>
+      </div>
 
 
- <div class="control-group">
-          <label class="control-label">Moderation:</label>
-          <div class="controls"> 
-            <div class="btn-group" data-toggle="buttons-radio">
-              <button type="button" class="btn btn-primary active" >No Moderation</button>
-              <button type="button" class="btn btn-primary">Manually add to stream</button>
-              <button type="button" class="btn btn-primary">Moderate after publish</button>
-            </div>
-
+      <div class="control-group" ng-show="hashtagInput">
+        <label class="control-label">Moderation:</label>
+        <div class="controls"> 
+          <div class="btn-group" data-toggle="buttons-radio">
+            <button type="button" class="btn btn-primary active" >No Moderation</button>
+            <button type="button" class="btn btn-primary">Manually add to stream</button>
+            <button type="button" class="btn btn-primary">Moderate after publish</button>
           </div>
+
         </div>
+      </div>
 
 
-         <div class="controls"> 
-          <a href="#">See moderation page</a>
-        </div>
-        </div>
-      </form>
-    </div>
+      <div class="controls" ng-show="hashtagInput"> 
+        <a href="#">See moderation page</a>
+      </div>
+    </form>
+  </div>
 </div>

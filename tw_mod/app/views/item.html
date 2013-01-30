@@ -11,21 +11,21 @@
         </div>
       </div>
 
-      <div class="control-group" ng-show="hashtagInput">
+      <div class="control-group animated fadeIn" ng-show="hashtagInput">
         <label class="control-label">Promoted users:</label>
         <div class="controls"> 
           <input class="promted-users-picker"  ui-select2="{tags:['@username1','@username2']}" multiple ng-model="users">
 
         </div>
         <div class="controls"> 
-          <label class="checkbox">
-            <input type="checkbox" checked disabled="false">Don't moderate promoted users {{users.length < 1}} 
+          <label class="checkbox animated fadeIn" ng-show="users.length > 0">
+            <input type="checkbox" checked >Don't moderate promoted users 
           </label>
         </div>
       </div>
 
 
-      <div class="control-group" ng-show="hashtagInput">
+      <div class="control-group animated fadeIn" ng-show="hashtagInput">
         <label class="control-label">Moderation:</label>
         <div class="controls"> 
           <div class="btn-group" data-toggle="buttons-radio">
@@ -38,7 +38,7 @@
       </div>
 
 
-      <div class="controls" ng-show="hashtagInput"> 
+      <div class="controls animated fadeIn" ng-show="hashtagInput"> 
         <a href="#">See moderation page</a>
       </div>
     </form>

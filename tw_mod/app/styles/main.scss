@@ -1,4 +1,6 @@
 @import "compass_twitter_bootstrap";
+@import "../components/animate.css/animate.css";
+
 
 // Single-line list items
 ul.inline,
@@ -43,20 +45,28 @@ body {
 
 
 .bubbles {
-  background: url('../images/iphone-big-brother.jpg') transparent no-repeat;
+  
 
+  .bubble-holder {
+    background: url('../images/iphone-big-brother.jpg') transparent no-repeat;
+    position: relative;
+    height: 500px;
+  }
   .bubble {
-    display: none;
-    margin-left: -93px;
-    margin-top: 66px;
-    width: 435px;
+    //display: none;
+    position: absolute;
+    top:60px;
+    left: 150px;
+    width: 350px;
     height: 155px;
-    background: url('../images/bubble.png') transparent no-repeat;
-    #progress-timer {
-      width: 80px;
-      margin-top:100px;
-      margin-left: 0px
-    }
+    
+    background: red;
+    //background: url('../images/bubble.png') transparent no-repeat;
+    // #progress-timer {
+    //   width: 80px;
+    //   margin-top:100px;
+    //   margin-left: 0px
+    // }
   }
 
 }

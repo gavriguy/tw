@@ -1,3 +1,4 @@
+@import url(../components/animate.css/animate.css);
 /*
  * Bootstrap v2.1.0
  *
@@ -6156,13 +6157,13 @@ a.label:hover, a.badge:hover {
   box-sizing: border-box;
 }
 
-/* line 5, ../../app/styles/main.scss */
+/* line 7, ../../app/styles/main.scss */
 ul.inline,
 ol.inline {
   margin-left: 0;
   list-style: none;
 }
-/* line 8, ../../app/styles/main.scss */
+/* line 10, ../../app/styles/main.scss */
 ul.inline li,
 ol.inline li {
   display: inline-block;
@@ -6171,16 +6172,16 @@ ol.inline li {
 }
 
 /* */
-/* line 19, ../../app/styles/main.scss */
+/* line 21, ../../app/styles/main.scss */
 body {
   position: relative;
 }
 
-/* line 22, ../../app/styles/main.scss */
+/* line 24, ../../app/styles/main.scss */
 .item-settings {
   background: url("../images/cms1.png") transparent no-repeat;
 }
-/* line 28, ../../app/styles/main.scss */
+/* line 30, ../../app/styles/main.scss */
 .item-settings .item-hashtags-setting {
   padding: 10px 0;
   position: absolute;
@@ -6188,36 +6189,32 @@ body {
   top: 500px;
   left: 273px;
 }
-/* line 34, ../../app/styles/main.scss */
+/* line 36, ../../app/styles/main.scss */
 .item-settings .item-hashtags-setting form {
   padding-left: 40px;
 }
-/* line 39, ../../app/styles/main.scss */
+/* line 41, ../../app/styles/main.scss */
 .item-settings .promted-users-picker {
   width: 400px;
 }
 
-/* line 45, ../../app/styles/main.scss */
-.bubbles {
+/* line 50, ../../app/styles/main.scss */
+.bubbles .bubble-holder {
   background: url("../images/iphone-big-brother.jpg") transparent no-repeat;
-}
-/* line 48, ../../app/styles/main.scss */
-.bubbles .bubble {
-  display: none;
-  margin-left: -93px;
-  margin-top: 66px;
-  width: 435px;
-  height: 155px;
-  background: url("../images/bubble.png") transparent no-repeat;
+  position: relative;
+  height: 500px;
 }
 /* line 55, ../../app/styles/main.scss */
-.bubbles .bubble #progress-timer {
-  width: 80px;
-  margin-top: 100px;
-  margin-left: 0px;
+.bubbles .bubble {
+  position: absolute;
+  top: 60px;
+  left: 150px;
+  width: 350px;
+  height: 155px;
+  background: red;
 }
 
-/* line 65, ../../app/styles/main.scss */
+/* line 75, ../../app/styles/main.scss */
 .tweets-list {
   margin-top: 10px;
 }

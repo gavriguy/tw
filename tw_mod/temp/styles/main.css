@@ -1,4 +1,5 @@
 @import url(../components/animate.css/animate.css);
+@import url(fontello.css);
 /*
  * Bootstrap v2.1.0
  *
@@ -6157,13 +6158,13 @@ a.label:hover, a.badge:hover {
   box-sizing: border-box;
 }
 
-/* line 7, ../../app/styles/main.scss */
+/* line 8, ../../app/styles/main.scss */
 ul.inline,
 ol.inline {
   margin-left: 0;
   list-style: none;
 }
-/* line 10, ../../app/styles/main.scss */
+/* line 11, ../../app/styles/main.scss */
 ul.inline li,
 ol.inline li {
   display: inline-block;
@@ -6172,16 +6173,16 @@ ol.inline li {
 }
 
 /* */
-/* line 21, ../../app/styles/main.scss */
+/* line 22, ../../app/styles/main.scss */
 body {
   position: relative;
 }
 
-/* line 24, ../../app/styles/main.scss */
+/* line 25, ../../app/styles/main.scss */
 .item-settings {
   background: url("../images/cms1.png") transparent no-repeat;
 }
-/* line 30, ../../app/styles/main.scss */
+/* line 31, ../../app/styles/main.scss */
 .item-settings .item-hashtags-setting {
   padding: 10px 0;
   position: absolute;
@@ -6189,32 +6190,88 @@ body {
   top: 500px;
   left: 273px;
 }
-/* line 36, ../../app/styles/main.scss */
+/* line 37, ../../app/styles/main.scss */
 .item-settings .item-hashtags-setting form {
   padding-left: 40px;
 }
-/* line 41, ../../app/styles/main.scss */
+/* line 42, ../../app/styles/main.scss */
 .item-settings .promted-users-picker {
   width: 400px;
 }
 
-/* line 50, ../../app/styles/main.scss */
+/* line 52, ../../app/styles/main.scss */
 .bubbles .bubble-holder {
   background: url("../images/iphone-big-brother.jpg") transparent no-repeat;
   position: relative;
   height: 500px;
 }
-/* line 55, ../../app/styles/main.scss */
+/* line 57, ../../app/styles/main.scss */
 .bubbles .bubble {
   position: absolute;
-  top: 60px;
-  left: 150px;
   width: 350px;
-  height: 155px;
-  background: red;
+  opacity: 0.8;
 }
 
 /* line 75, ../../app/styles/main.scss */
 .tweets-list {
   margin-top: 10px;
+}
+
+/* line 80, ../../app/styles/main.scss */
+.ticker-holder {
+  background: url("../images/iphone-news.png") transparent no-repeat;
+  position: relative;
+  height: 500px;
+}
+/* line 84, ../../app/styles/main.scss */
+.ticker-holder .ticker {
+  width: 120px;
+  overflow: hidden;
+  position: absolute;
+  left: 112px;
+  top: 70px;
+  padding-left: 40px;
+  padding-right: 4px;
+  background: #a11d1a;
+  color: #fff;
+  height: 2.5em;
+  line-height: 2.5em;
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+  -webkit-border-top-right-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  border-top-right-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  -moz-border-radius-bottomright: 5px;
+  border-bottom-right-radius: 5px;
+  -webkit-box-shadow: 5px 5px 5px black;
+  -moz-box-shadow: 5px 5px 5px black;
+  box-shadow: 5px 5px 5px black;
+}
+/* line 86, ../../app/styles/main.scss */
+.ticker-holder .ticker.long {
+  -webkit-transition: width 0.9s;
+  -moz-transition: width 0.9s;
+  -o-transition: width 0.9s;
+  transition: width 0.9s;
+  width: 350px;
+}
+/* line 108, ../../app/styles/main.scss */
+.ticker-holder .ticker #webticker {
+  float: right;
+}
+/* line 112, ../../app/styles/main.scss */
+.ticker-holder .ticker .marq {
+  height: 2.5em;
+}
+/* line 115, ../../app/styles/main.scss */
+.ticker-holder .ticker .abs-strt {
+  position: absolute;
+  margin-left: -30px;
+  top: 10px;
+}
+/* line 120, ../../app/styles/main.scss */
+.ticker-holder .ticker a {
+  color: #fff;
+  text-decoration: underline;
 }

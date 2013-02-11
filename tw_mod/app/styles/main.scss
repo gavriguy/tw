@@ -1,5 +1,6 @@
 @import "compass_twitter_bootstrap";
 @import "../components/animate.css/animate.css";
+@import "fontello.css";
 
 
 // Single-line list items
@@ -44,6 +45,7 @@ body {
 }
 
 
+
 .bubbles {
   
 
@@ -55,12 +57,10 @@ body {
   .bubble {
     //display: none;
     position: absolute;
-    top:60px;
-    left: 150px;
-    width: 350px;
-    height: 155px;
     
-    background: red;
+    width: 350px;
+    opacity: 0.8;
+    
     //background: url('../images/bubble.png') transparent no-repeat;
     // #progress-timer {
     //   width: 80px;
@@ -75,3 +75,61 @@ body {
 .tweets-list {
   margin-top:10px;
 }
+
+
+.ticker-holder {
+    background: url('../images/iphone-news.png') transparent no-repeat;
+    position: relative;
+    height: 500px;
+    .ticker {
+      width: 120px;
+      &.long {
+        @include transition( width .9s );
+        width: 350px;
+        #webticker {
+          //@include transition( width .9s );
+        }
+
+      }
+      overflow: hidden;
+      position: absolute;
+      left: 112px;
+      top: 70px;
+      padding-left: 40px;
+      padding-right: 4px;
+      background: #a11d1a;
+      color: #fff;
+      height: 2.5em;
+      line-height: 2.5em;
+      @include opacity(70);
+      @include border-top-right-radius(5px);
+      @include border-bottom-right-radius(5px);
+      @include single-box-shadow(#000, 5px, 5px);
+      #webticker {
+        //width: 300px;
+        float: right;
+      }
+      .marq {
+        height: 2.5em;
+      }
+      .abs-strt {
+        position: absolute;
+        margin-left: -30px;
+        top:10px;
+      }
+      a {
+        color: #fff;
+        text-decoration: underline;
+      }
+    }
+    
+    
+  }
+
+
+
+
+
+
+
+
